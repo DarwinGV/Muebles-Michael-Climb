@@ -124,10 +124,15 @@ textarea::placeholder {
     transition: 0.5s;
 }
 
-.imagen-fondo {
-    background-image: url(/Imagenes/rocky\ 120\ ropa.png);
+.sin-baulera, .con-baulera {
+    background-image: url(../Imagenes/rocky-120-ropa.png);
     background-size: cover;
     margin: 10px;
+}
+
+.con-baulera {
+    background-image: url(../Imagenes/Rocky-Baul-200-cosas.png);
+
 }
 
 .categoria p {
@@ -165,27 +170,27 @@ textarea::placeholder {
 }
 
 .imga {
-    background-image: url(/Imagenes/rocky\ 120\ ropa.png);
+    background-image: url(../Imagenes/rocky-120-ropa.png);
 }
 
 .imgb {
-    background-image: url(/Imagenes/rocky\ 180\ ropa.png);
+    background-image: url(../Imagenes/rocky-180-ropa.png);
 }
 
 .imgc {
-    background-image: url(/Imagenes/rocky\ 240\ ropa.png);
+    background-image: url(../Imagenes/rocky-240-ropa.png);
 }
 
 .imgaa {
-    background-image: url(/Imagenes/1\ Rocky\ Baul\ 120\ cosas.jpeg);
+    background-image: url(../Imagenes/1-Rocky-Baul-120-cosas.jpeg);
 }
 
 .imgbb {
-    background-image: url(/Imagenes/10\ Rocky\ Baul\ 180\ cosas.jpeg);
+    background-image: url(../Imagenes/10-Rocky-Baul-180-cosas.jpeg);
 }
 
 .imgcc {
-    background-image: url(/Imagenes/16\ Rocky\ Baul\ 240\ cosas.jpeg);
+    background-image: url(../Imagenes/16-Rocky-Baul-240-cosas.jpeg);
 }
 
 .categoria:hover {
@@ -225,7 +230,7 @@ textarea::placeholder {
     /* Gradiente blanco de izquierda a derecha */
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
         /* Imagen de fondo centrada y cubriendo la mitad derecha */
-        url('/Imagenes/Imagenes-Acerca-De/Quienes-somos.jpg') no-repeat;
+        url('../Imagenes/Imagenes-Acerca-De/Quienes-somos.jpg') no-repeat;
     background-size: cover;
     /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     background-position: 160px -170px;
@@ -236,7 +241,7 @@ textarea::placeholder {
     /* Gradiente blanco de izquierda a derecha */
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
         /* Imagen de fondo centrada y cubriendo la mitad derecha */
-        url('/Imagenes/Imagenes-Acerca-De/como-trabajamos.jpg') no-repeat;
+        url('../Imagenes/Imagenes-Acerca-De/como-trabajamos.jpg') no-repeat;
     background-size: cover;
     /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     background-position: 160px -170px;
@@ -247,7 +252,7 @@ textarea::placeholder {
         /* Gradiente blanco de izquierda a derecha */
         background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
         /* Imagen de fondo centrada y cubriendo la mitad derecha */
-        url('/Imagenes/Imagenes-Acerca-De/envios.jpg') no-repeat;
+        url('../Imagenes/Imagenes-Acerca-De/envios.jpg') no-repeat;
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     background-position: 160px -170px; /* Posiciona la imagen */
 }
@@ -256,7 +261,7 @@ textarea::placeholder {
         /* Gradiente blanco de izquierda a derecha */
         background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
         /* Imagen de fondo centrada y cubriendo la mitad derecha */
-        url('/Imagenes/Imagenes-Acerca-De/formas-de-pago.jpg') no-repeat;
+        url('../Imagenes/Imagenes-Acerca-De/formas-de-pago.jpg') no-repeat;
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     background-position: 160px -100px; /* Posiciona la imagen */
 }
@@ -265,7 +270,7 @@ textarea::placeholder {
         /* Gradiente blanco de izquierda a derecha */
         background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
         /* Imagen de fondo centrada y cubriendo la mitad derecha */
-        url('/Imagenes/Imagenes-Acerca-De/trayectoria.png') no-repeat;
+        url('../Imagenes/Imagenes-Acerca-De/trayectoria.png') no-repeat;
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     background-position: 160px -100px; /* Posiciona la imagen */
 }
