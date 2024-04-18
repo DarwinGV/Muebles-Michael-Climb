@@ -1,0 +1,292 @@
+/*-- ↓Main Contacto↓ -----------------------------------------------------------------*/
+.centrar_texto {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Estilo de form-contacto */
+#contenedor_formulario {
+    display: flex;
+    justify-content: center;
+    padding: 50px 55px;
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px #444;
+    border-radius: 10px;
+}
+
+.textcontacto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: var();
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    border: 1.5px solid #cacaca;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #cacaca;
+}
+
+.form div {
+    margin: 20px;
+}
+
+.completa {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #cacaca;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1.5px solid #cacaca;
+    outline: none;
+}
+
+.botonescontacto {
+    background-color: #cacaca;
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.contenedor_animacion p {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    min-width: 100%;
+    height: fit-content;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+    animation: desplazamiento 20s linear infinite;
+}
+
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(0%);
+        /* Desplazamiento inicial */
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+.animacion {
+    line-height: 3.5px;
+    background-color: rgb(53, 53, 53);
+}
+
+.contenedor_animacion {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+}
+
+/*-- ↑Main Contacto↑ -----------------------------------------------------------------*/
+
+/* --↓Main Tienda↓-----------------------------------------------------------------------------*/
+
+.categoria {
+    padding: 20px;
+    background-color: #eeeeee transparent;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.imagen-fondo {
+    background-image: url(/Imagenes/rocky\ 120\ ropa.png);
+    background-size: cover;
+    margin: 10px;
+}
+
+.categoria p {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.placard {
+    display: inline-block;
+    justify-content: center;
+    height: 0px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.descripcion-placard {
+    background-color: #cacaca;
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+}
+
+/* Placares sin baulera */
+.imagen {
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.imga {
+    background-image: url(/Imagenes/rocky\ 120\ ropa.png);
+}
+
+.imgb {
+    background-image: url(/Imagenes/rocky\ 180\ ropa.png);
+}
+
+.imgc {
+    background-image: url(/Imagenes/rocky\ 240\ ropa.png);
+}
+
+.imgaa {
+    background-image: url(/Imagenes/1\ Rocky\ Baul\ 120\ cosas.jpeg);
+}
+
+.imgbb {
+    background-image: url(/Imagenes/10\ Rocky\ Baul\ 180\ cosas.jpeg);
+}
+
+.imgcc {
+    background-image: url(/Imagenes/16\ Rocky\ Baul\ 240\ cosas.jpeg);
+}
+
+.categoria:hover {
+    height: 320px;
+    transition: 0.5s ease;
+    background-color: #eeeeee;
+
+    .articulos {
+        height: auto;
+        transition: 0.5s ease;
+    }
+
+    .placard {
+        margin-top: 20px;
+        height: 200px;
+        transition: 0.5s ease;
+    }
+}
+
+/* --↑Main Tienda↑-----------------------------------------------------------------------------*/
+
+/*-- ↓Main Acerca de↓ -----------------------------------------------------------------*/
+.acerca-de {
+    padding: 20px;
+}
+
+.div-acerca-de {
+    margin: 0 0 10px 0;
+    background-color: #eeeeee transparent;
+    height: 70px;
+    overflow: hidden;
+    border: 1px solid;
+    transition: 0.5s;
+}
+
+.qs {
+    /* Gradiente blanco de izquierda a derecha */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('/Imagenes/Imagenes-Acerca-De/Quienes-somos.jpg') no-repeat;
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -170px;
+    /* Posiciona la imagen */
+}
+
+.ct {
+    /* Gradiente blanco de izquierda a derecha */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('/Imagenes/Imagenes-Acerca-De/como-trabajamos.jpg') no-repeat;
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -170px;
+    /* Posiciona la imagen */
+}
+
+.en{
+        /* Gradiente blanco de izquierda a derecha */
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('/Imagenes/Imagenes-Acerca-De/envios.jpg') no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -170px; /* Posiciona la imagen */
+}
+
+.fp{
+        /* Gradiente blanco de izquierda a derecha */
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('/Imagenes/Imagenes-Acerca-De/formas-de-pago.jpg') no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -100px; /* Posiciona la imagen */
+}
+
+.tr{
+        /* Gradiente blanco de izquierda a derecha */
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+        /* Imagen de fondo centrada y cubriendo la mitad derecha */
+        url('/Imagenes/Imagenes-Acerca-De/trayectoria.png') no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: 160px -100px; /* Posiciona la imagen */
+}
+
+.div-acerca-de h2 {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin: auto auto auto 10px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.div-acerca-de p{
+    padding: 20px;
+}
+
+.h2acerca-de {}
+
+.div-acerca-de:hover{
+    height: 200px;
+}
+
+/*-- ↑Main Acerca de↑ -----------------------------------------------------------------*/
