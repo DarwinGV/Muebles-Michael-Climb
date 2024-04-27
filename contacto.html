@@ -23,7 +23,7 @@
 <body>
     <!--header-------------------------------->
     <header>
-        
+
         <div class="header-nav"> <img class="imagen-header" src="Imagenes/img-header.jpeg" alt="Imagen de Placard">
             <nav>
                 <a href="contacto.html">Contacto</a>
@@ -32,86 +32,88 @@
                 <a href="index.html">Inicio</a>
             </nav>
         </div>
-                <div class="contenedor_animacion">
+        <div class="contenedor_animacion">
             <div class="animacion">
                 <p>ENVIOS A TODO EL PAIS</p>
                 <p>3 CUOTAS SININTERES</p>
             </div>
         </div>
     </header>
-    
+
     <!--main-------------------------------->
     <main>
- <!--contenedor form-->
-            <section id="contenedor_formulario">
-                <form class="form">
-                    <h1 class="centrar_texto">Contactanos</h1>
-                    <fieldset class="completa">
-                        <legend></legend>
-                        <div class="textcontacto">
-                            <label for="nombre_completo">Nombre completo</label>
-                            <input type="text" name="nombre_completo" id="nombre_completo" placeholder="Carlos Perez" required />
-                        </div>
-
-                        <div class="textcontacto">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="carlosperez@gmail.com" required />
-                        </div>
-
-                        <div class="textcontacto">
-                            <label for="text">Mensaje</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-
+        <main>
+            <!--contenedor imagen de fondo-->
+            <section id="sectionContacto">
+                <!--contenedor form-->
+                <section id="contenedor_formulario">
+                    <form class="form">
+                        <h1 class="centrar_texto">Contactanos</h1>
+                        <fieldset class="completa">
+                            <legend></legend>
+                            <div class="textcontacto">
+                                <label for="nombre_completo">Nombre
+                                    completo</label>
+                                <input type="text" name="nombre_completo" id="nombre_completo"
+                                    placeholder="Carlos Perez" required />
+                            </div>
+                            <div class="textcontacto">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="carlosperez@gmail.com" required />
+                            </div>
+                            <div class="textcontacto">
+                                <label for="text">Mensaje</label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div>
+                                <label for="id_femenino">Femenino</label>
+                                <input type="radio" name="sexo" id="id_femenino" value="femenino">
+                                <label for="id_masculino">Masculino</label>
+                                <input type="radio" name="sexo" id="id_masculino" value="masculino">
+                                <label for="id_otro">Otro</label>
+                                <input type="radio" name="sexo" id="id_otro" value="otro">
+                            </div>
+                            <div>
+                                <input type="checkbox" name="terminos_y_condiciones" id="t_y_c">
+                                <label for="t_y_c"> Acepto
+                                    los terminos y condiciones</label>
+                            </div>
+                        </fieldset>
                         <div>
-                            <label for="id_femenino">Femenino</label>
-                            <input type="radio" name="sexo" id="id_femenino" value="femenino">
-                            <label for="id_masculino">Masculino</label>
-                            <input type="radio" name="sexo" id="id_masculino" value="masculino">
-                            <label for="id_otro">Otro</label>
-                            <input type="radio" name="sexo" id="id_otro" value="otro">
+                            <input type="reset" class="botonescontacto" value="Limpiar">
+                            <input type="submit" class="botonescontacto" value="Enviar">
                         </div>
-
-                        <div>
-                            <input type="checkbox" name="terminos_y_condiciones" id="t_y_c">
-                            <label for="t_y_c"> Acepto los terminos y condiciones</label>
-                        </div>
-                    </fieldset>
-
-                    <div>
-                        <input type="reset" class="botonescontacto" value="Limpiar">
-                        <input type="submit" class="botonescontacto" value="Enviar">
-                    </div>
-                </form>
+                    </form>
+                </section>
             </section>
-    </main>
+        </main>
 
-    <!--footer-------------------------------->
-    <footer>
-        <div class="footer-barra"></div>
-        <div class="footer-container">
+        <!--footer-------------------------------->
+        <footer>
+            <div class="footer-barra"></div>
+            <div class="footer-container">
 
-            <div class="footer-info">
-                <h3>Información de contacto</h3>
-                <p>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
-                <p>Teléfono: 555-123456</p>
-                <p>Email: tienda@tiendaplacares.com</p>
+                <div class="footer-info">
+                    <h3>Información de contacto</h3>
+                    <p>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
+                    <p>Teléfono: 555-123456</p>
+                    <p>Email: tienda@tiendaplacares.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes sociales</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-social">
-                <h3>Redes sociales</h3>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2024 Tienda de Placares. Todos los derechos reservados.</p>
-        </div>
-        <div class="footer-barra"></div>
-    </footer>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tienda de Placares. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-barra"></div>
+        </footer>
 
 </body>
 
