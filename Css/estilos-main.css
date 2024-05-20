@@ -18,10 +18,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 50%;
+    left: 50%;
+    background: #91745da5;
+    width: 480px;
     width: 340px;
     padding: 50px 55px;
     box-shadow: 0 0 20px #444;
     border-radius: 10px;
+}
+
+#sectionContacto {
+    background-image: url(../Imagenes/Fondo-contacto.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    width: 100%;
+    height: 100%;
 }
 
 .textcontacto {
