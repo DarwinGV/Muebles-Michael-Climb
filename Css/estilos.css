@@ -7,12 +7,34 @@ main {
     margin: 2px;
 }
 
+/* Estilos Generales */
+#asociados{
+    font-size: 2vw;
+    color: #333;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    text-decoration: underline;
+    align-content: end;
+    text-align: center;
+    margin: auto;
+}
+h1 {
+    color: #ecf0f1;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.titulo {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    margin: auto;
+}
 :root {
     --color-grisprimario: #444;
-  }
-  
-/* --------------------------------------------------------------------------->Header */
-/* Nav */
+}
+
+/* Header */
 .contenedor_animacion{
     margin: 5px 0;
     display: block;
@@ -56,7 +78,7 @@ nav a:hover {
     padding-right: 40px;
 }
 
-/* --------------------------------------------------------------------------->Footer */
+/* Footer */
 .redes,
 .derechos {
     text-align: center;
@@ -78,17 +100,15 @@ footer {
     text-align: center;
 }
 
-/* Pone info y redes en dos bloques alineados */
 .footer-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
     align-items: center;
-    max-width: 1200px;
-    margin: 30px;
+    max-width: 1500px;
+    margin: 20px auto;
 }
 
-/* Pone los iconos de las redes uno al lado del otro */
 .footer-social ul {
     display: flex;
     justify-content: center;
@@ -96,14 +116,11 @@ footer {
     margin: 10px 0;
 }
 
-/* Quita el estilo de lista y da un margen entre si */
 .footer-social ul li {
     list-style: none;
     margin: 0 10px;
-
 }
 
-/* Da esatilo a los iconos de redes */
 .footer-social ul li a {
     transition: .5s;
     color: rgb(15, 14, 14);
@@ -122,20 +139,29 @@ footer {
     font-size: 12px;
 }
 
-/* Líneas */
+.logo2 {
+    height: 200px;
+    width: 200px;
+    margin-left: end;
+}
+
 .footer-barra {
     height: 1px;
     background-color: #444;
     margin: 40px;
 }
 
-/* Responsive */
-/* Header */
+/* Responsive Header */
 @media(max-width: 40rem) {
-    header {
+    .header-nav {
         flex-direction: column;
         height: auto;
         transition: .2s;
+    }
+
+    #asociados{
+        font-size: 20px;
+        margin-top: 20px;
     }
 
     .imagen-header {
@@ -150,11 +176,9 @@ footer {
     }
 }
 
-/* Footer */
+/* Responsive Footer */
 @media (max-width: 25rem) {
     .footer-container {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
-
-    nav {}
 }
