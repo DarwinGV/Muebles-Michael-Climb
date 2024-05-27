@@ -50,7 +50,7 @@
             <section id="sectionContacto">
                 <!--contenedor form-->
                 <section id="contenedor_formulario">
-                    <form class="form">
+                    <form class="form" id="form">
                         <h1 class="centrar_texto">Contactanos</h1>
                         <fieldset class="completa">
                             <legend></legend>
@@ -58,15 +58,15 @@
                                 <label for="nombre_completo">Nombre
                                     completo</label>
                                 <input type="text" name="nombre_completo" id="nombre_completo"
-                                    placeholder="Carlos Perez" required />
+                                    placeholder="Carlos Perez"  /> <!--required -->
                             </div>
                             <div class="textcontacto">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="carlosperez@gmail.com" required />
+                                <input type="email" id="email" placeholder="carlosperez@gmail.com"  /> <!--required -->
                             </div>
                             <div class="textcontacto">
                                 <label for="text">Mensaje</label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <textarea name="" id="Mensaje" cols="30" rows="10"></textarea>
                             </div>
                             <div>
                                 <label for="id_femenino">Femenino</label>
@@ -77,7 +77,7 @@
                                 <input type="radio" name="sexo" id="id_otro" value="otro">
                             </div>
                             <div>
-                                <input type="checkbox" name="terminos_y_condiciones" id="t_y_c">
+                                <input type="checkbox" name="terminos_y_condiciones" id="TyC">
                                 <label for="t_y_c"> Acepto
                                     los terminos y condiciones</label>
                             </div>
@@ -85,6 +85,7 @@
                         <div>
                             <input type="reset" class="botonescontacto" value="Limpiar">
                             <input type="submit" class="botonescontacto" value="Enviar">
+                            <p class="warnings" id="warnings"></p>
                         </div>
                     </form>
                 </section>
